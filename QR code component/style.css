@@ -1,0 +1,38 @@
+body {
+	font-family: 'Outfit', sans-serif;
+	background-color: hsl(212, 45%, 89%);
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+p {
+	font-size: 15px;
+	font-weight: 400;
+	color: hsl(220, 15%, 55%)
+}
+
+h1 {
+	font-weight: 700;
+}
+
+.qr-box {
+	width: 320px;
+    height: 500px;
+	border: 5px solid hsl(0, 0%, 100%);
+	border-radius: 15px;
+	background-color: hsl(0, 0%, 100%);
+	text-align: center;
+	padding: 10px;
+
+}
+
+.text-block {
+	padding: 0 20px;
+}
+
+.qr-box img {
+	max-width: 100%;
+	border-radius: 15px;
+}
