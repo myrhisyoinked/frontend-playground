@@ -58,6 +58,7 @@ h3 {
 	font-size: 3em;
 	margin: 0;
 	margin-top: 0.5em; 
+	font-weight: 800;
 }
 
 .brief-summary .bubble-score p {
@@ -69,6 +70,7 @@ h3 {
 .brief-summary h2 {
 	color: hsl(0, 0%, 100%);
 	margin-bottom: 0;
+	font-weight: 700;
 }
 
 .brief-summary p {
@@ -76,4 +78,72 @@ h3 {
 	color: hsl(241, 100%, 89%);
 	text-align: center;
 	margin: 1em 2.5em 2.5em 2.5em;
+	font-weight: 500;
+}
+
+.detailed-score h2 {
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 0;
+	color: hsl(224, 30%, 27%);
+}
+
+.detailed-score {
+	margin: 1.5em;
+}
+
+.detailed-score ul {
+	font-size: 18px;
+}
+
+.detailed-score ul li {
+	border-radius: 8px;
+	padding: 0.8em;
+	margin-bottom: 1em;
+}
+
+.detailed-score img {
+	vertical-align: -15%;
+	margin-right: 4px;
+}
+
+#reaction {
+	color: hsl(0, 100%, 67%);
+	background: hsla(0, 100%, 67%, 0.1);
+}
+
+#memory {
+	color: hsl(39, 100%, 56%);
+	background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verbal {
+	color: hsl(166, 100%, 37%);
+	background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual {
+	color: hsl(234, 85%, 45%);
+	background-color: hsla(234, 85%, 45%, 0.1);
+	margin-bottom: 0.5em;
+}
+
+button {
+	font-family: 'Hanken Grotesk', sans-serif;
+	width: 100%;
+	height: 55px;
+	border-radius: 30px;
+	border: none;
+	background-color: hsl(224, 30%, 27%);
+	color: hsl(0, 0%, 100%);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+button:focus, 
+button:hover {
+	background: linear-gradient(
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
 }
