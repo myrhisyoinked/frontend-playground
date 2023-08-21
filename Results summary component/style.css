@@ -1,0 +1,79 @@
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	margin: 0;
+}
+
+body, html {
+	height: 100%;
+	scrollbar-width: none; /* can be removed */
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.result-summary {
+	height: 100%;
+}
+
+h3 {
+	margin: 0;
+}
+
+.brief-summary {
+	background: linear-gradient(
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+	border-bottom-left-radius: 1.875em;
+	border-bottom-right-radius: 1.875em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.brief-summary h3 {
+	margin-top: 1.3em;
+	color: hsl(241, 100%, 89%);
+	font-size: 1.1em;
+}
+
+.bubble-score {
+	background: linear-gradient(
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+	border-radius: 50%;
+	width: 8em;
+	height: 8em;
+	text-align: center;
+	margin-top: 1.3em;
+}
+
+.bubble-score h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 3em;
+	margin: 0;
+	margin-top: 0.5em; 
+}
+
+.brief-summary .bubble-score p {
+	margin: 0;
+	color: hsla(241, 100%, 89%, 0.7);
+	font-size: 15px;
+}
+
+.brief-summary h2 {
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 0;
+}
+
+.brief-summary p {
+	font-size: 16px;
+	color: hsl(241, 100%, 89%);
+	text-align: center;
+	margin: 1em 2.5em 2.5em 2.5em;
+}
