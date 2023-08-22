@@ -1,0 +1,111 @@
+body {
+	background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	color: hsl(0, 0%, 95%);
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.5;
+}
+
+button {
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: hsl(0, 0%, 95%);
+	border: 3px solid hsl(0, 0%, 95%);
+	border-radius: 35px;
+	padding: 12px 2.3em;
+	font-size: 15px;
+	margin-top: 0.6em;
+}
+
+section {
+	display: grid;
+	place-content: center;
+	margin: 3em 1em;
+}
+
+article {
+	padding: 3em;
+}
+
+article:first-child {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+article:last-child {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.sedans button {
+	color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+	color: hsl(184, 100%, 22%);
+}
+
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+	color: hsl(179, 100%, 13%);
+}
+
+button {
+	transition: all 0.25s;
+}
+
+button:focus,
+button:hover {
+	background-color: transparent;
+	border: 3px solid hsl(0, 0%, 95%);
+	color: hsl(0, 0%, 95%);
+	transition: all 0.25s;
+}
+
+@media screen and (min-width: 990px) {
+	body {
+		display: grid;
+		place-content: center;
+		height: 95vh;
+	}
+
+	section {
+		grid-template-columns: repeat(3, 300px);
+		height: auto;
+	}
+
+	article:first-child {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 8px;
+	}
+
+	article:last-child {
+		border-top-right-radius: 8px;
+		border-bottom-left-radius: 0;
+	}
+
+	article p {
+		margin-bottom: 5em;
+	}
+}
