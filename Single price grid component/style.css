@@ -3,6 +3,7 @@ body {
 	line-height: 1.5;
 	display: grid;
 	place-content: center;
+	height: 95vh;
 	background-color: hsl(204, 43%, 93%);
 }
 
@@ -123,3 +124,38 @@ p {
 	color: hsla(0, 100%, 100%, 0.7);
 }
 
+@media screen and (min-width: 1020px) {
+	.introduction {
+		grid-area: header;
+	}
+
+	.subscription {
+		grid-area: price;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	article {
+		grid-template-areas: 
+			"header header"
+			"price footer";
+	}
+
+	section {
+		padding: 2.5em;
+	}
+
+	.footer {
+		border-bottom-left-radius: 0;
+	}
+
+	.subscription {
+		border-bottom-left-radius: 6px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
