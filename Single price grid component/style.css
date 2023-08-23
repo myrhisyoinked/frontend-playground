@@ -18,6 +18,9 @@ h1, h2, h3 {
 article {
 	display: grid;
 	margin: 4em 1.5em;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 7em;
 }
 
 section {
