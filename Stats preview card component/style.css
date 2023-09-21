@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+html {
+  box-sizing: border-box;
+  background: hsl(233, 47%, 7%);
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  display: grid;
+  flex-direction: column;
+  margin: 1.5em;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  align-items: center;
+}
+
+ul {
+  margin-bottom: 2em;
+}
+
+.header {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.header-image {
+  background: url("images/image-header-mobile.jpg") no-repeat;
+  background-size: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 225px;
+}
+
+.color-overlay {
+  background-color: hsla(277, 91%, 40%, 0.4);
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+li:last-child {
+  margin-bottom: 1rem;
+}
+
+li p {
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+@media (min-width: 560px) {
+  section {
+    margin: 4em;
+  }
+}
+
+@media (min-width: 1240px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    width: 1080px;
+    height: 425px;
+    align-items: normal;
+  }
+
+  .header-image {
+    background: url("images/image-header-desktop.jpg") no-repeat;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 102px;
+    margin-bottom: 0;
+  }
+
+  li {
+    margin: 0 2rem;
+    text-align: initial;
+  }
+
+  .stats {
+    padding: 2rem;
+  }
+
+  .header {
+    text-align: initial;
+  }
+
+  .main-paragraph {
+    text-align: initial;
+    margin: 0;
+    margin-top: 0.75rem;
+    margin-bottom: 4rem;
+    padding: 0 1.5rem;
+    font-size: 16px;
+  }
+
+  img, 
+  .color-overlay,
+  .header-image {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+
+}
