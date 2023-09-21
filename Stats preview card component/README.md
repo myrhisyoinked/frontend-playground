@@ -20,13 +20,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/ss-monile.png)
+![](images/ss-mobile.png)
 ![](images/ss-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/myrhisyoinked/frontend-playground/tree/main/Stats%20preview%20card%20component](https://github.com/myrhisyoinked/frontend-playground/tree/main/Stats%20preview%20card%20component)
+- Live Site URL: [https://myrhisyoinked.github.io/frontend-playground/Stats%20preview%20card%20component](https://myrhisyoinked.github.io/frontend-playground/Stats%20preview%20card%20component)
 
 ## Author
 
