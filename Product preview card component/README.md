@@ -11,10 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -29,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/image-product-mobile.jpg)
-![](images/image-product-desktop.jpg)
+![](images/ss-mobile.png)
+![](images/ss-desktop.png)
 
 ### Links
 
