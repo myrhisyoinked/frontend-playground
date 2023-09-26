@@ -13,7 +13,7 @@ function addScore(obj) {
 		const listItem = document.createElement('li');
 		let categorySpan;
 		const categoryIcon = `<img src="${score.icon}" alt="${score.category}" />`;
-		
+
 		listItem.setAttribute('id', score.category.toLowerCase());
 
 		categorySpan = categoryIcon;
