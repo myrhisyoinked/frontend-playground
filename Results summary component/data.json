@@ -18,5 +18,15 @@
     "category": "Visual",
     "score": 72,
     "icon": "./assets/images/icon-visual.svg"
+  },
+  {
+    "category": "Testing",
+    "score": 32,
+    "icon": "./assets/images/icon-visual.svg"
+  },
+  {
+    "category": "Test",
+    "score": 100,
+    "icon": "./assets/images/icon-visual.svg"
   }
 ]
