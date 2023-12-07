@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+	font-weight: 200;
+	margin-bottom: 0;
+	color: hsl(234, 12%, 34%);
+}
+
+h2 {
+	color: hsl(234, 12%, 34%);
+	margin-top: 0;
+}
+
+p {
+	font-weight: 400;
+	color: hsl(229, 6%, 66%);
+	font-size: 15px;
+}
+
+h1,
+h2,
+.description {
+	text-align: center;
+}
+
+.description {
+	margin-bottom: 4.5rem;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 1440px;
+	margin-top: 3rem;
+	padding: 0 2rem;
+}
+
+.features-list {
+	display: grid;
+	grid-auto-columns: minmax(200px, 350px);
+	gap: 1.5rem;
+}
+
+.feature {
+	padding: 1.5rem;
+	background-color: hsl(0, 100%, 100%);
+	border-radius: 10px;
+	position: relative;
+}
+
+.border {
+	background-color: hsl(180, 62%, 55%);
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.supervisor {
+	background-color: hsl(180, 62%, 55%);
+}
+
+.team-builder {
+	background-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+	background-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+	background-color: hsl(212, 86%, 64%);
+}
+
+.feature img {
+	float: right;
+}
+
+.feature p {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+h3 {
+	margin: 0;
+	color: hsl(234, 12%, 34%);
+}
+
+.feature {
+	box-shadow: rgb(203, 213, 225) 0px 20px 25px -5px,
+		rgb(203, 213, 225) 0px 8px 10px -6px;
+}
+
+@media screen and (min-width: 700px) {
+	.features-list {
+		grid-template-columns: repeat(2, minmax(200px, 350px));
+	}
+}
+
+@media screen and (min-width: 1210px) {
+	h1,
+	h2 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	.description {
+		width: 60%;
+	}
+
+	.brief-description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.features-list {
+		grid-template-areas:
+			'. tb .'
+			'sv tb cl'
+			'sv km cl'
+			'. km .';
+	}
+
+	.tb {
+		grid-area: tb;
+	}
+
+	.sv {
+		grid-area: sv;
+	}
+
+	.km {
+		grid-area: km;
+	}
+
+	.cl {
+		grid-area: cl;
+	}
+
+	.feature {
+		padding: 2rem;
+	}
+
+	.feature img {
+		margin-top: 1rem;
+	}
+
+	.feature h3 {
+		margin-bottom: 0.3rem;
+	}
+}

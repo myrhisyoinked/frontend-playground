@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body {
+	background: url('images/bg-pattern-top-mobile.svg') no-repeat top,
+		url('images/bg-pattern-bottom-mobile.svg') no-repeat bottom;
+	font-family: 'League Spartan', sans-serif;
+	display: grid;
+	place-content: center;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.five-stars {
+	display: inline;
+}
+
+section {
+	max-width: 720px;
+	margin: 2rem 1rem;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h1 {
+	color: hsl(300, 43%, 22%);
+	font-size: 2.3rem;
+	margin-bottom: 0;
+}
+
+.service-description {
+	color: hsl(303, 10%, 53%);
+	font-size: 17.9px;
+	line-height: 1.2;
+	margin-bottom: 2.5rem;
+}
+
+ul li {
+	background-color: hsl(300, 24%, 96%);
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+}
+
+ul li img {
+	margin: 0 1px;
+}
+
+.hidden-hr {
+	border: rgba(0, 0, 0, 0);
+	margin: 4.5px 0;
+}
+
+.reviews-container {
+	display: grid;
+	text-align: initial;
+}
+
+.review {
+	background: hsl(300, 43%, 22%);
+	margin: 0.7rem 0;
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+
+.review img {
+	border-radius: 50%;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin-right: 1.3rem;
+}
+
+.customer-bio {
+	display: flex;
+}
+
+h2,
+h3 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+h2 {
+	color: hsl(0, 0%, 100%);
+	font-weight: 500;
+	margin-bottom: 0.2rem;
+}
+
+h3 {
+	color: hsl(333, 80%, 67%);
+	font-weight: 400;
+}
+
+.review p {
+	color: hsl(0, 0%, 100%);
+	margin: 1.5rem 0 0 0;
+	line-height: 1.2;
+	letter-spacing: 1.5px;
+}
+
+.customer {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+}
+
+@media screen and (min-width: 1280px) {
+	html {
+		height: 100%;
+	}
+
+	.hidden-hr,
+	br {
+		display: none;
+	}
+
+	ul {
+		margin-top: 3rem;
+	}
+
+	ul li {
+		width: 400px;
+		padding: 1.2rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	ul li:nth-child(2) {
+		margin-left: 3rem;
+	}
+
+	ul li:nth-child(3) {
+		margin-left: 6rem;
+	}
+
+	.review {
+		height: 13.5rem;
+		margin-top: 0;
+	}
+
+	.review:nth-child(2) {
+		margin-top: 1rem;
+	}
+
+	.review:nth-child(3) {
+		margin-top: 2rem;
+	}
+
+	body {
+		background: url('images/bg-pattern-top-desktop.svg') no-repeat top left,
+			url('images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+	}
+
+	h1 {
+		grid-area: h1;
+		font-size: 3.5rem;
+		width: 23rem;
+	}
+
+	h1,
+	.service-description {
+		text-align: left;
+	}
+
+	ul {
+		grid-area: rating;
+	}
+
+	.service-description {
+		grid-area: description;
+		font-size: 19px;
+		width: 30rem;
+		margin-bottom: 4.5rem;
+	}
+
+	.review p {
+		font-size: 14px;
+	}
+
+	.reviews-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		grid-area: reviews;
+	}
+
+	section {
+		margin-top: 4rem;
+		display: grid;
+		max-width: 1100px;
+		grid-template-areas:
+			'h1 . rating'
+			'h1 . rating'
+			'description . rating'
+			'reviews reviews reviews';
+	}
+}
